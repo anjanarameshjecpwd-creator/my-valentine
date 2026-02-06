@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>For Anishetta ❤️</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -52,7 +49,7 @@ p {
   line-height: 1.6;
 }
 
-button {
+button, .link-btn {
   margin-top: 18px;
   padding: 12px 22px;
   border: none;
@@ -65,6 +62,11 @@ button {
 
 button.no {
   background: #999;
+}
+
+.link-btn {
+  display: inline-block;
+  text-decoration: none;
 }
 
 @keyframes fadeIn {
@@ -84,15 +86,15 @@ button.no {
   from { transform: translateY(0); opacity: 1; }
   to { transform: translateY(-110vh); opacity: 0; }
 }
-</style>
-</head>
+</style></head><body><audio id="music" src="athousandyears.mp3" loop></audio>
 
-<body>
-
-<audio id="music" src="athousandyears.mp3" autoplay loop></audio>
-
-<!-- PAGE 0 : VALENTINE -->
-<section class="active">
+<!-- PAGE 0 : TAP TO PLAY MUSIC --><section class="active">
+  <div class="card">
+    <h1>Tap to play our song 🎶</h1>
+    <p>This song is for us ❤️</p>
+    <a class="link-btn" onclick="startMusic()">▶️ Tap to Play</a>
+  </div>
+</section><!-- PAGE 1 : VALENTINE --><section>
   <div class="card">
     <h1>Will you be my Valentine? ❤️</h1>
     <button onclick="yesClicked()">YES 💖</button><br>
@@ -101,48 +103,33 @@ button.no {
       No is not an option 😄<br>Click YES ❤️
     </p>
   </div>
-</section>
-
-<!-- PHOTO 1 -->
-<section>
+</section><!-- PHOTO 1 --><section>
   <div class="card">
     <img src="photo1.jpg">
     <p>You are my favorite part of every day ❤️</p>
     <button onclick="nextPage()">Next</button>
   </div>
-</section>
-
-<!-- PHOTO 2 -->
-<section>
+</section><!-- PHOTO 2 --><section>
   <div class="card">
     <img src="photo2.jpg">
     <p>With you, everything feels like home 💍</p>
     <button onclick="nextPage()">Next</button>
   </div>
-</section>
-
-<!-- PHOTO 3 -->
-<section>
+</section><!-- PHOTO 3 --><section>
   <div class="card">
     <img src="photo3.jpg">
     <p>Every memory with you is my treasure 💕</p>
     <button onclick="nextPage()">Next</button>
   </div>
-</section>
-
-<!-- GIF PAGE -->
-<section>
+</section><!-- GIF PAGE --><section>
   <div class="card">
     <img src="love.gif">
     <p>"I choose you. And I’ll choose you, over and over."</p>
     <button onclick="nextPage()">Next</button>
   </div>
-</section>
-
-<!-- FINAL PAGE -->
-<section>
+</section><!-- FINAL PAGE --><section>
   <div class="card">
-    <h1>Always. Forever. Us. ❤️</h1>
+    <h1>Always. Forever. You. ❤️</h1>
     <p>
       Anishetta,<br><br>
       Loving you is my greatest blessing.
@@ -152,11 +139,16 @@ button.no {
       — <b>Jomol 💖</b>
     </p>
   </div>
-</section>
-
-<script>
+</section><script>
 let page = 0;
 const sections = document.querySelectorAll("section");
+
+function startMusic() {
+  const music = document.getElementById("music");
+  music.currentTime = 0;
+  music.play();
+  nextPage();
+}
 
 function yesClicked() {
   nextPage();
@@ -182,7 +174,5 @@ function createHeart() {
 }
 
 setInterval(createHeart, 400);
-</script>
-
-</body>
+</script></body>
 </html>
