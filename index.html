@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Anishetta 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: #4a1c2a;
+      text-align: center;
+    }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 25px;
+      padding: 30px;
+      max-width: 520px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .gallery img {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    .card p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+    .heart {
+      font-size: 3rem;
+      animation: beat 1.2s infinite;
+      margin: 20px 0;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
+    button {
+      margin-top: 20px;
+      background: #ff3366;
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      background: #e62e5c;
+      transform: scale(1.05);
+    }
+    footer {
+      margin-top: 35px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="musicButton" onclick="playMusic()" style="font-size:3rem; cursor:pointer; margin-bottom:10px;">💖</div>
+    <p style="margin-top:-5px; font-size:0.95rem; opacity:0.85;">Tap the heart to play our song</p>
+    <script>
+      function playMusic() {
+        const music = document.getElementById('bgMusic');
+        music.play();
+        document.getElementById('musicButton').innerHTML = '🎵';
+      }
+    </script>
+    <audio id="bgMusic" loop>
+      <source src="athousandyears.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Happy Valentine’s Day 💕</h1>
+    <h2>For <strong>Anishetta</strong> 🌹</h2><div class="card">
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Our memory 1">
+    <img src="photo2.jpg" alt="Our memory 2">
+    <img src="photo3.jpg" alt="Our memory 3">
+  </div>
+  <div class="gif-section" style="margin-top:15px; text-align:center;">
+    <img src="love.gif" alt="Love gif" style="width:160px; border-radius:20px; box-shadow:0 5px 15px rgba(0,0,0,0.2);">
+    <p style="margin-top:12px; font-size:1.05rem; font-style:italic; color:#6b1f3a;">"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."</p>
+  </div>
+  <div class="heart">❤️</div>
+  <p>
+    Anishetta, from the moment you came into my life, everything became warmer, brighter, and filled with meaning. Every smile of yours feels like home, and every moment with you is something I quietly thank the universe for.
+  </p>
+  <p>
+    You are my comfort, my strength, and my happiest place. Loving you is the easiest and most beautiful thing I have ever done. I choose you — today, tomorrow, and for all the days that follow.
+  </p>
+  <p><strong>Will you be my Valentine, Anishetta?</strong></p>
+  <button onclick="showProposal()">Yes 💘</button>
+  <div id="proposal" style="display:none; margin-top:20px;">
+    <p style="font-size:1.2rem;"><strong>Anishetta ❤️</strong></p>
+    <p>You are not just my love, you are my home, my forever, and my greatest blessing.</p>
+    <p>Thank you for choosing me every day.</p>
+    <p><strong>Happy Valentine’s Day, my husband 💖</strong></p>
+  </div>
+  <script>
+    function showProposal() {
+      document.getElementById('proposal').style.display = 'block';
+    }
+  </script>
+</div>
+
+<footer>
+  Forever yours,
+  <strong>Jomol</strong> 💕
+</footer>
+
+  </div>
+    <div id="finalPage" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg,#ff9a9e,#fad0c4); z-index:999; display:flex; justify-content:center; align-items:center; text-align:center; padding:20px; overflow:hidden;">
+    <div class="floating-hearts"></div>
+    <div style="background:rgba(255,255,255,0.95); border-radius:30px; padding:40px; max-width:500px; box-shadow:0 20px 40px rgba(0,0,0,0.25); position:relative; z-index:2;">
+      <h1 style="font-size:2.5rem; margin-bottom:15px;">Always. Forever. You. ❤️</h1>
+      <p style="font-size:1.15rem; line-height:1.7;">Anishetta, loving you is my greatest blessing. Every day with you is my favorite chapter, and every tomorrow feels brighter because it is with you.</p>
+      <p style="font-size:1.1rem; margin-top:20px;">Thank you for being my husband, my best friend, and my forever.</p>
+      <p style="margin-top:25px; font-size:1.2rem;"><strong>— Jomol 💖</strong></p>
+    </div>
+  </div>
+  <style>
+    .floating-hearts span {
+      position: absolute;
+      bottom: -20px;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.8;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
+    }
+  </style>
+  <script>
+    function createHearts() {
+      const container = document.querySelector('.floating-hearts');
+      setInterval(() => {
+        const heart = document.createElement('span');
+        heart.innerHTML = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = 4 + Math.random() * 3 + 's';
+        container.appendChild(heart);
+        setTimeout(() => heart.remove(), 7000);
+      }, 400);
+    }
+    function showFinalPage() {
+      document.getElementById('finalPage').style.display = 'flex';
+      createHearts();
+    }
+  </script><script>
+    function showFinalPage() {
+      document.getElementById('finalPage').style.display = 'flex';
+    }
+  </script></body>
+</html>
